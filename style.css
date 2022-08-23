@@ -1,15 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Quicksand:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: rgba(141, 186, 211, 0.4235294118);
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
 }
 
-nav, nav a {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+body {
+  background-color: rgba(141, 186, 211, 0.3490196078);
+}
+
+nav,
+nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -31,31 +65,39 @@ nav, nav a {
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
-  margin-left: 62vw;
+  margin-left: 60vw;
 }
 
 .luke {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
+  max-width: 310px;
   border-radius: 40%;
 }
 
 .name {
-  margin-left: 2.4vw;
   font-family: "Big Shoulders Display", cursive;
   font-size: 7vw;
-  padding-top: 1rem;
+  margin-left: -2rem;
+  font-weight: 900;
+  word-spacing: 1rem;
+  padding-top: 2rem;
   color: #1d3557;
   text-decoration: underline;
-  text-shadow: 1px 1px 3px black;
 }
 
 .developer {
-  margin-left: 8vw;
-  font-family: "Quicksand", sans-serif;
+  display: flex;
+  margin-left: 45rem;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  letter-spacing: 1.2rem;
   font-size: 2vw;
   font-weight: 400;
+  -webkit-animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
 }
 
 .contact {
@@ -65,8 +107,23 @@ nav, nav a {
 }
 
 .phone {
-  margin-left: 2.5rem;
-  margin-top: -15rem;
+  display: flex;
+  margin-left: -4rem;
+  margin-top: -14rem;
+  font-family: "Quicksand", sans-serif;
+  color: #1d3557;
+  font-size: 4vw;
+}
+
+.email {
+  display: flex;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 600;
+  padding-top: 2rem;
+  margin-left: -11rem;
+  color: black;
 }
 
 .social-link {
@@ -75,7 +132,14 @@ nav, nav a {
   gap: 23.3333333333%;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0 0.5rem 0;
+  margin: 6.5rem 0 0.5rem 0;
+}
+
+.insta:hover,
+.face:hover,
+.linkedin:hover {
+  opacity: 100%;
+  transition: 0.8s;
 }
 
 .insta {

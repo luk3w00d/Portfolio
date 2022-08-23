@@ -1,21 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Quicksand:wght@300;400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  $text_color: #1d3557; 
-  $main_font:'Quicksand', sans-serif;
+}
 
- body {
-    background-color: #8dbad36c ;
- } 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black
+    }
+}
+
+$text_color: #1d3557;
+$main_font: 'Quicksand', sans-serif;
+
+body {
+    background-color: #8dbad359;
+}
+
 // links to other pages
-  nav, nav a {
+nav,
+nav a {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     margin-top: 1vh;
     text-decoration: none;
     font-weight: 400;
@@ -23,88 +48,130 @@
     font-family: $main_font;
     color: #1d3557;
 }
+
 .logo img {
     display: flex;
     width: 10vw;
     margin-left: -5rem;
 }
+
 .lukedp {
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
-    margin-left: 62vw    
+    margin-left: 60vw
 }
+
 .luke {
     display: flex;
     flex-direction: column;
-    max-width:360px ;
+    max-width: 310px;
     border-radius: 40%;
 }
+
 .name {
-    margin-left: 2.4vw;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 7vw;
-    padding-top: 1rem;
+    margin-left: -2rem;
+    font-weight: 900;
+    word-spacing: 1rem;
+    padding-top: 2rem;
     color: $text_color;
     text-decoration: underline;
-    text-shadow: 1px 1px 3px black;
 }
-.developer{
-    margin-left: 8vw; 
-    font-family: $main_font;
-    font-size: 2vw;  
+
+.developer {
+    display: flex;
+    margin-left: 45rem;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    letter-spacing: 1.2rem;
+    font-size: 2vw;
     font-weight: 400;
+    animation:
+        typing 3.5s steps(20, end),
+        blink-caret .5s step-end infinite;
 }
-.contact{
-    display:flex;
+
+.contact {
+    display: flex;
     flex-direction: column;
-    margin-left:15rem;
+    margin-left: 15rem;
 }
+
 .phone {
-    margin-left: 2.5rem;
-    margin-top: -15rem;
-    }
+    display: flex;
+    margin-left: -4rem;
+    margin-top: -14rem;
+    font-family: $main_font;
+    color: $text_color;
+    font-size: 4vw;
+}
+
+.email {
+    display: flex;
+    text-decoration: none;
+    font-family: $main_font;
+    font-size: 3.2vw;
+    font-weight: 600;
+    padding-top: 2rem;
+    margin-left: -11rem;
+    color: black;
+}
+
+.email:hover {}
+
 .social-link {
     display: grid;
     grid-auto-flow: column;
-    gap:calc(70% / 3) ;
+    gap: calc(70% / 3);
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 0.5rem 0 ;
+    margin: 6.5rem 0 0.5rem 0;
 }
-.insta {
-        display: flex;
-        border: 2px solid rgba(0, 0, 0, 0.601);
-        border-radius: 10px 10px 10px;
-        background: linear-gradient(
-          to right,
-          #0023964d,
-          #83008f4d,
-          #c0007a4d,
-          #ff88204d,
-          #f6ba005d
-        );
-        opacity: 60%;
-        transition: 0.5s;
-      }
-.linkedin {
-        display: flex;
-        border: 2px solid rgba(0, 0, 0, 0.601);
-        border-radius: 10px 10px 10px;
-        background: #0076b55d;
-        opacity: 60%;
-        transition: 0.5s;
-      }
-.face {
-        display: flex;
-        border: 2px solid rgba(0, 0, 0, 0.601);
-        border-radius: 10px 10px 10px;
-        background: #4267b26d;
-        opacity: 60%;
-        transition: 0.5s;
-      }
 
-footer{
+.insta:hover,
+.face:hover,
+.linkedin:hover {
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.insta {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: linear-gradient(to right,
+            #0023964d,
+            #83008f4d,
+            #c0007a4d,
+            #ff88204d,
+            #f6ba005d);
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.linkedin {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: #0076b55d;
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.face {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: #4267b26d;
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+footer {
     display: flex;
     justify-content: center;
     padding-top: 0.5rem;
