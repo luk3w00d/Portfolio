@@ -51,12 +51,12 @@ h3 {
     font-family: $main_font;
     color: $text_color;
     text-shadow: 2px 2px 2px black;
-    font-size: 7vw;
+    font-size: 9vw;
     font-weight: 300;
 }
 
 h2 {
-    font-size: 16vw;
+    font-size: 17vw;
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 800;
     text-decoration: underline;
@@ -121,18 +121,31 @@ footer>p {
     padding-top: 2vh;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 490px) and (max-width:899px) {
+    nav>a{
+        font-size: max(22px) ;
+    }
+
     main>img{
-        width: 30%;
+        width: 28%;
+        max-width: 215px;
+        margin-bottom: 2rem;
     }
     h2 {
         font-size: 14vw;
-        padding: 0 4vw ;   
+        padding: 0 4vw ;  
+        font-size: max(78px); 
     }
     h3 {
-    //    font-size: ; 
+        font-size: max(39px);
     }
     .contact >* {
         margin: 0.4rem;
     }
+    .phone {
+        font-size: max(25px);
+    }
+}
+@media screen and (min-width:899px) {
+    
 }
