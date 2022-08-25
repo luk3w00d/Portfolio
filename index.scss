@@ -12,9 +12,7 @@ $main_font: 'Quicksand', sans-serif;
 body{
     height: 100vh;
 }
-footer{
-    margin-top: auto;
-}
+
 main>img {
     display: flex;
     flex-direction: row;
@@ -114,7 +112,8 @@ h2 {
 
 footer {
     font-family: $main_font ;
-}
+     margin-top: auto;
+    }
 
 footer>p {
     display: flex;
@@ -180,7 +179,7 @@ nav>span {
 }
 .logo>img {
     width: 12rem;
-    padding-top:40% ;
+    padding-top:50% ;
     margin-left: -2em;
     transition: 1.5s;
   }  
@@ -200,7 +199,7 @@ nav>span {
     
   }
   h3 {
-    font-size: 4vw;
+    font-size: 4.3vw;
     margin-top: none;
   }
   .contact> * {
@@ -208,7 +207,7 @@ nav>span {
     
   } 
   .email{
-    font-size: 2rem;
+    font-size: 2.5vw;
     transition: 1s;
   }
   .phone{

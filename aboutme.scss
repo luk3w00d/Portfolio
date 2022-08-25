@@ -11,17 +11,36 @@ $main_font: 'Quicksand', sans-serif;
 
 body{
     height: 100vh;
-  }
-  footer {
-      margin-top: auto;
-  }
-
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:$main_font ;
+}
+article>p {
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+h1 {
+    font-weight: 400;
+    box-shadow: 1px 1px 4px #1d3557;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+h2 {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+}
 .social-link {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .insta:hover,
 .face:hover,
 .linkedin:hover {

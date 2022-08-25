@@ -74,8 +74,8 @@ nav a {
 }
 
 .logo img {
-  display: flex;
   width: 17vw;
+  padding-top: 1rem;
 }
 
 .social-link {
