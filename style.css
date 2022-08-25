@@ -38,15 +38,15 @@
     border-color: black;
   }
 }
-footer {
-  margin-top: auto;
-}
-
 body {
   background-image: linear-gradient(rgba(255, 239, 147, 0.2901960784), white, rgba(255, 238, 147, 0.2901960784));
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 main {
@@ -117,6 +117,11 @@ nav a {
   background: rgba(66, 103, 178, 0.4274509804);
   opacity: 60%;
   transition: 0.5s;
+}
+
+.insta > img, .face > img, .linkedin > img {
+  width: 8vw;
+  max-width: 45px;
 }
 
 footer {

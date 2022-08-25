@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Nova+Slim&family=Quicksand:wght@300;400&family=Train+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$text_color: #1d3557;
+$main_font: 'Quicksand', sans-serif;
+
+body{
+    height: 100vh;
+  }
+  footer {
+      margin-top: auto;
+  }
+
+.social-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.insta:hover,
+.face:hover,
+.linkedin:hover {
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.insta {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: linear-gradient(to right,
+            #0023964d,
+            #83008f4d,
+            #c0007a4d,
+            #ff88204d,
+            #f6ba005d);
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.linkedin {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: #0076b55d;
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.face {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.601);
+    border-radius: 10px 10px 10px;
+    background: #4267b26d;
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+footer {
+    font-family: $main_font ;
+}
+
+footer>p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2vh;
+}

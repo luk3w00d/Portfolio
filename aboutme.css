@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Nova+Slim&family=Quicksand:wght@300;400&family=Train+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.social-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.insta:hover,
+.face:hover,
+.linkedin:hover {
+  opacity: 100%;
+  transition: 0.8s;
+}
+
+.insta {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.601);
+  border-radius: 10px 10px 10px;
+  background: linear-gradient(to right, rgba(0, 35, 150, 0.3019607843), rgba(131, 0, 143, 0.3019607843), rgba(192, 0, 122, 0.3019607843), rgba(255, 136, 32, 0.3019607843), rgba(246, 186, 0, 0.3647058824));
+  opacity: 60%;
+  transition: 0.5s;
+}
+
+.linkedin {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.601);
+  border-radius: 10px 10px 10px;
+  background: rgba(0, 118, 181, 0.3647058824);
+  opacity: 60%;
+  transition: 0.5s;
+}
+
+.face {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.601);
+  border-radius: 10px 10px 10px;
+  background: rgba(66, 103, 178, 0.4274509804);
+  opacity: 60%;
+  transition: 0.5s;
+}
+
+footer {
+  font-family: "Quicksand", sans-serif;
+}
+
+footer > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2vh;
+}/*# sourceMappingURL=aboutme.css.map */
