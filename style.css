@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Quicksand:wght@300;400&family=Zen+Tokyo+Zoo&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +43,7 @@ footer {
 }
 
 body {
-  background-color: #e9ecef;
+  background-image: linear-gradient(rgba(255, 239, 147, 0.2901960784), white, rgba(255, 238, 147, 0.2901960784));
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -76,16 +76,6 @@ nav a {
 .logo img {
   display: flex;
   width: 17vw;
-  max-width: 102px;
-}
-
-.lukedp {
-  display: flex;
-  flex-direction: column;
-}
-
-.luke {
-  border-radius: 40%;
 }
 
 .social-link {
@@ -99,6 +89,7 @@ nav a {
 .linkedin:hover {
   opacity: 100%;
   transition: 0.8s;
+  box-shadow: 2px 2px 2px black;
 }
 
 .insta {

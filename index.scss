@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Nova+Slim&family=Quicksand:wght@300;400&family=Train+One&display=swap');
 
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,14 +11,6 @@ $main_font: 'Quicksand', sans-serif;
 
 main>img {
     width: 40%;
-}
-
-.name {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 7vw;
-    font-weight: 900;
-    color: $text_color;
-    text-decoration: underline;
 }
 
 .contact {
@@ -34,31 +26,30 @@ main>img {
 .phone {
     font-family: $main_font;
     color: $text_color;
-    font-size: 5vw;
+    font-weight: 300;
+    font-size: 7vw;
 }
 
 .email {
     text-decoration: none;
     font-family: $main_font;
+    font-size: 6vw;
     font-weight: 600;
-    color: black;
+    color: $text_color;
 }
 
 h3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     font-family: $main_font;
     color: $text_color;
     text-shadow: 2px 2px 2px black;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 300;
 }
 
 h2 {
-    font-size: 17vw;
+    font-size: 16vw;
     font-family: 'Big Shoulders Display', cursive;
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: underline;
     color: black;
     text-shadow: 3px 3px 2px white;
@@ -122,30 +113,100 @@ footer>p {
 }
 
 @media screen and (min-width: 490px) and (max-width:899px) {
-    nav>a{
-        font-size: max(22px) ;
-    }
+nav>a{
+    font-size: max(22px) ;
+}
+.logo>img {
+    padding-top: 25%;
+}
 
-    main>img{
-        width: 28%;
-        max-width: 215px;
-        margin-bottom: 2rem;
-    }
-    h2 {
-        font-size: 14vw;
-        padding: 0 4vw ;  
-        font-size: max(78px); 
-    }
-    h3 {
-        font-size: max(39px);
-    }
-    .contact >* {
-        margin: 0.4rem;
-    }
-    .phone {
-        font-size: max(25px);
-    }
+main>img{
+    width: 30%;
+    max-width: 215px;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size: 1vw;
+    padding: 0 4vw ;  
+    font-size: max(80px); 
+}
+h3 {
+    font-size: max(35px);
+}
+.contact >* {
+    margin: 0.4rem;
+}
+.phone {
+    font-size: max(25px);
+}
+.email {
+    font-size: max(23px);
+}
 }
 @media screen and (min-width:899px) {
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+nav>a {
+    font-size: 50%;
+    }
+nav>span {
+    font-size:60% ;
+    font-weight: 300;
+}
+.b2:hover, .b3:hover, .b4:hover {
+    background-color:  rgba(255, 255, 255, 0.341);
+    transition: 1s ;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.487);
+    border-radius: 3px 3px 3px;
+    padding:0 5px;
+    font-weight: 400;
+}
+.b2, .b3, .b4 {
+    transition: 1s ;
+}
+.logo>img {
+    width: 12rem;
+    padding-top:40% ;
+    margin-left: -2em;
+    transition: 1.5s;
+  }  
+  .logo>img:hover{
+   background-color: rgba(128, 128, 128, 0.202) ;
+    transition: 1.5s;
+  }
+  main>.luke{
+    margin-left: 8rem;
+    width: 20%;
+  }
+  h2 {
+    font-size: 7vw;
+    font-family: 'Train One', cursive;
+    font-weight: 400;
+    background:none ;
     
+  }
+  h3 {
+    font-size: 4vw;
+    margin-top: none;
+  }
+  .contact> * {
+    margin: 0.4em;
+    
+  } 
+  .contact>.email, .phone{
+    font-size: 160%;
+    transition: 1s;
+  }
+.email:hover {
+    font-size: 1.7rem;
+    font-weight: 400;
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.341);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.487);
+    border-radius: 3px 3px 3px;
+    padding:0 5px;
+}
 }
