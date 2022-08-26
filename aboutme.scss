@@ -1,200 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Nova+Slim&family=Quicksand:wght@300;400&family=Train+One&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 $text_color: #1d3557;
 $main_font: 'Quicksand', sans-serif;
 
 @keyframes typing {
-    from { 
-        width: 0% 
+    from {
+        width: 0%
     }
-    to { 
-        width: 100% 
+
+    to {
+        width: 100%
     }
 }
 
 @keyframes blink {
-    from, to { 
-        border-color: transparent 
+
+    from,
+    to {
+        border-color: transparent
     }
-    50% { 
-        border-color: #1d3557; 
+
+    50% {
+        border-color: #1d3557;
     }
 }
-body{
-    height: 100vh;
-}
-article, article>p, article>a {
+
+article,
+#photos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family:$main_font ;
+    font-family: $main_font ;
 }
-article>p, article>a{
+
+article>p,
+article>a {
     font-size: 18px;
     font-weight: 300;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0.5rem;
 }
-img {
+
+#res {
+    color: $text_color;
+    font-weight: 600;
+    transition: 1s;
+}
+
+a>img {
     width: 85vw;
     border-radius: 10px 10px 10px;
 }
-.photo1 {
+
+a>.photo1 {
     margin-top: 1rem;
-    box-shadow: 2px 2px 4px;
+    box-shadow: 2px 2px 4px black;
 }
-.photo2 {
+
+a>.photo2 {
     margin-top: 1rem;
-    box-shadow: 2px 2px 4px;
+    box-shadow: 2px 2px 4px black;
 }
+
 .typewriter {
     font-family: Courier, monospace;
-	display: inline-block;
+    display: inline-block;
 }
+
 h1 {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     display: inline-block;
-  	overflow: hidden;
-  	letter-spacing: 2px;
- 	animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end), blink .75s step-end infinite;
     white-space: nowrap;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 400;
     color: #1d3557;
     border-right: 2px solid #1d3557;
     box-sizing: border-box;
 }
+
 h2 {
     font-size: 1.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
 }
-.social-link {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2rem;
-}
-.insta:hover,
-.face:hover,
-.linkedin:hover {
-    opacity: 100%;
-    transition: 0.8s;
+
+
+@media screen and (min-width: 490px) and (max-width:899px) {
+    h1 {
+        margin-top: 1rem;
+    }
+
+    a>img {
+        max-width: 550px;
+    }
 }
 
-.insta {
-    display: flex;
-    border: 2px solid rgba(0, 0, 0, 0.601);
-    border-radius: 10px 10px 10px;
-    background: linear-gradient(to right,
-            #0023964d,
-            #83008f4d,
-            #c0007a4d,
-            #ff88204d,
-            #f6ba005d);
-    opacity: 60%;
-    transition: 0.5s;
-}
+@media screen and (min-width:900px) {
+    h2 {
+        font-size: 2.7vw;
+        margin-top: 2rem;
+    }
 
-.linkedin {
-    display: flex;
-    border: 2px solid rgba(0, 0, 0, 0.601);
-    border-radius: 10px 10px 10px;
-    background: #0076b55d;
-    opacity: 60%;
-    transition: 0.5s;
-}
+    h1 {
+        margin-top: 2rem;
+        font-size: 4vw;
+    }
 
-.face {
-    display: flex;
-    border: 2px solid rgba(0, 0, 0, 0.601);
-    border-radius: 10px 10px 10px;
-    background: #4267b26d;
-    opacity: 60%;
-    transition: 0.5s;
-}
+    article>p {
+        font-size: 19px;
+        font-weight: 500;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 1.5rem;
+    }
 
-footer {
-    font-family: $main_font ;
-}
+    a>.photo1,
+    a>.photo2 {
+        max-width: 785px;
+        margin-top: 2rem;
+    }
 
-footer>p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 2vh;
-}
-@media screen and (min-width: 490px) and (max-width:899px){
-nav>a{
-    font-size: max(22px) ;
+    #res:hover {
+        box-shadow: 1.5px 1.5px 2px #1d3557;
+        transition: 1s;
+        text-decoration: none;
     }
-h1 {
-    margin-top: 2rem;
-    }
-.logo img{
-    padding-top: 30%;
-    }
-article> img {
-    max-width:550px ;
-    }
-}
-@media screen and (min-width:900px){
-nav>a {
-    font-size: 50%;
-    }
-nav>span {
-    font-size:60% ;
-    font-weight: 300;
-    }
-.logo>img {
-    width: 12rem;
-    padding-top:50% ;
-    margin-left: -2em;
-    transition: 1.5s;
-      }  
-.logo>img:hover{
-    background-color: rgba(128, 128, 128, 0.202) ;
-    transition: 1.5s;
-      }
-.b2:hover, .b3:hover, .b4:hover {
-    background-color:  rgba(255, 255, 255, 0.341);
-    transition: 1s ;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.487);
-    border-radius: 3px 3px 3px;
-    padding:0 5px;
-    font-weight: 400;
-    }
-.b2, .b3, .b4 {
-    transition: 1s ;
-    }
-h2, h1{
-    font-size: 2.5vw;
-    margin-top: 2rem;
-}
-h1 {
-    font-family: monospace;
-    overflow: hidden;
-    border-right: 2px solid;
-    
-}
-article>p {
-    font-size: 19px;
-    font-weight: 500;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 1.5rem;
-}
-.photo1, .photo2 {
-    max-width: 785px;
-    margin-top: 2rem;
-}
 }

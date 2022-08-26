@@ -110,17 +110,6 @@ h2 {
     transition: 0.5s;
 }
 
-footer {
-    font-family: $main_font ;
-     margin-top: auto;
-    }
-
-footer>p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 2vh;
-}
 
 @media screen and (min-width: 490px) and (max-width:899px) {
 
