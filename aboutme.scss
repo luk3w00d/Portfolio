@@ -32,6 +32,7 @@ article,
     flex-direction: column;
     align-items: center;
     font-family: $main_font ;
+    color: $text_color;
 }
 
 article>p,
@@ -96,6 +97,7 @@ h2 {
     h1 {
         margin-top: 1rem;
     }
+    
 
     a>img {
         max-width: 550px;

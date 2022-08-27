@@ -37,6 +37,7 @@ article,
   flex-direction: column;
   align-items: center;
   font-family: "Quicksand", sans-serif;
+  color: #1d3557;
 }
 
 article > p,
