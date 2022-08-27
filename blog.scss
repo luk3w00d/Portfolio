@@ -10,9 +10,7 @@ h2 {
     font-family: 'Big Shoulders Display', cursive;
     margin-top:1.5rem ;
     padding: 1rem;
-    border-top: 2px solid #1d35575b;
-    border-bottom: 10px  solid #1d35575b;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 1px 2px black;
     background-color: rgba(240, 248, 255, 0.456);
 }
 .blog-button{
@@ -25,9 +23,8 @@ h2 {
 }
 #l1, #l2, #l3, #l4, #l5 {
     padding: 0.5rem;
-    background-color: rgba(240, 248, 255, 0.339);
     box-shadow: 1px 1px 2px black;
-    margin: 4px;
+    margin: 5px;
     transition: 1.5s;
     font-size: 1rem;
 }
