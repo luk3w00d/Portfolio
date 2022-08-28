@@ -1,19 +1,19 @@
 # Portfolio Documentation
 
---
-
-## [Portfolio Website]()
-
-## [Gitub Repository]()
 
 
---
+## [Portfolio Website](https://lukewood-portfolio-t1a2)
+
+## [Gitub Repository](https://github.com/luk3w00d/Portfolio)
+
+
+
 
 ## Purpose and target audience
 
 The portfolio website is to demonstrate my ability to create a website with the skills learnt in the first three weeks of study at coder academy. The target audience is for possible future employees to show my web development skills.
 
---
+
 
 ## Function and futures
 
@@ -29,12 +29,11 @@ while still maintaining a responsive design to fit the current devices.
 -Blog: This is a blog style page which at the top you can click the link to go to the part of the page where blog is located.
 
 
---
 
 ## Sitemap
-Created on Lucid online platform.
 
-![Sitemap] (Docs/Portfolio-sitemap.png)
+
+![Sitemap](Docs/Portfolio-sitemap.png)
 
 ## Wireframes and screenshots 
 
@@ -49,13 +48,13 @@ Created on Lucid online platform.
 
 ### Projects Wireframe
 
-![Projects Wireframe](Docs/Projects-wire.png)
+![Projects Wireframe](Docs/Project-wire.png)
 
 ### Blog wireframe
 
-![Blog Wireframe](Docs/blog-wire.png)
+![Blog Wireframe](Docs/Blog-wire.png)
 
---
+
 
 ### Index screenshot
 
@@ -63,7 +62,7 @@ Created on Lucid online platform.
 
 ### About screenshot
 
-![About screenshot](Docs/About-screenshot.png)
+![About screenshot](Docs/About-screen.png)
 
 ### Projects screenshot
 
@@ -73,7 +72,6 @@ Created on Lucid online platform.
 
 ![Blog screenshot](Docs/Blogs-screen.png)
 
---
 
 ## Tech Stack
 
